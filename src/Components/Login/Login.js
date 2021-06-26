@@ -37,7 +37,8 @@ function Login() {
               type="email"
               name="email"
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300 "
-              placeholder="Johnbull@example.com" onChange = {(event) => onChangeHandler(event)}
+              placeholder="Johnbull@example.com"
+              onChange={(event) => onChangeHandler(event)}
             />
           </div>
           <div className="px-4 pb-4">
@@ -48,13 +49,17 @@ function Login() {
               type="password"
               name="email"
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300"
-              placeholder="Enter your password" onChange = {(event) => onChangeHandler(event)}
+              placeholder="Enter your password"
+              onChange={(event) => onChangeHandler(event)}
             />
           </div>
           <div>
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="button" onClick = {(event) => {signInWithEmailAndPasswordHandler(event, email, password)}}
+              type="button"
+              onClick={(event) => {
+                signInWithEmailAndPasswordHandler(event, email, password);
+              }}
             >
               Sign In
             </button>
